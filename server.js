@@ -106,8 +106,8 @@ const server = http.createServer((req, res) => {
 
     // Send the final response
     res.statusCode = statusCode;
-    res.setHeader('Content-Type', 'text/html'); // IMPORTANT: Now tell the browser to expect HTML!
-    res.end(generateHtml(pageTitle, pageContent)); // Send the styled content
+    res.setHeader('Content-Type', 'text/html'); // This tells the browser to expect html
+    res.end(generateHtml(pageTitle, pageContent)); 
 
 });
 // Starts the server
